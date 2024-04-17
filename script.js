@@ -1,6 +1,7 @@
 const Problem1 = require('./Problem1');
 const Problem2 = require('./Problem2');
 const problem3 = require('./Problem3');
+const problem4 = require('./Problem4');
 let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year":2009},
 {"id":2,"car_make":"Mazda","car_model":"Miata MX-5","car_year":2001},
 {"id":3,"car_make":"Land Rover","car_model":"Defender Ice Edition","car_year":2010},
@@ -61,5 +62,8 @@ console.log(`lastcarInfo: Last car is a ${lastcarInfo.car_make} ${lastcarInfo.ca
 // Executing problem3 for sorting the array by the names of cars
 const modelNames =  problem3(inventory);
 console.log('Problem3 Sorted modelNames: ', modelNames);
+// Executing problem4 for getting the manufacture year of the car
+const CarYears = problem4(inventory);
+console.log('Problem4 for CarYears: ', CarYears);
 // Exporting inventory
 module.exports = inventory;
